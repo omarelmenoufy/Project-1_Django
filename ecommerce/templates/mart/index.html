@@ -21,11 +21,20 @@
     </label> <br>
     
 {% endfor %}
+<button onclick="display()">
+    clickme
+</button>
 <button type="submit"> Submit</button>
 
 </form>
 
 {% include "parts/footer.html" %}
+
+<script>
+    function display(){
+        document.getElementById("message").textContent = "Hello! Thanks for clicking.";
+    }
+</script>
 
 </body>
 {%endblock content%}
